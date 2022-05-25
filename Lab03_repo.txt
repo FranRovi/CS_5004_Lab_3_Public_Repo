@@ -1,0 +1,328 @@
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % cd ..
+franciscorovirosa@Franciscos-MacBook-Pro CS_5004_Lab_3_Public_Repo % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   Lab03/Lab_3.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Lab03/Lab_3.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.gitignore
+	Lab03/.DS_Store
+	Lab03/.idea/
+	Lab03/Lab03.iml
+
+franciscorovirosa@Franciscos-MacBook-Pro CS_5004_Lab_3_Public_Repo % ls
+Lab03
+franciscorovirosa@Franciscos-MacBook-Pro CS_5004_Lab_3_Public_Repo % cd Lab03 
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   Lab_3.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Lab_3.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+	.DS_Store
+	.idea/
+	Lab03.iml
+
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git commit -m "Inital commit. Created new repo for Lab03"
+[master (root-commit) 9f2b97f] Inital commit. Created new repo for Lab03
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Lab03/Lab_3.txt
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Lab_3.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+	.DS_Store
+	.idea/
+	Lab03.iml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % ls
+Lab03.iml	src
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git log
+commit 9f2b97f513fef06f579c29341f55967c0d160669 (HEAD -> master)
+Author: Francisco Rovirosa <rovirosafrancisco@gmail.com>
+Date:   Tue May 24 17:48:34 2022 -0700
+
+    Inital commit. Created new repo for Lab03
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % ls
+Lab03.iml	out		src
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % cd src
+franciscorovirosa@Franciscos-MacBook-Pro src % ls
+HelloWorld.java
+franciscorovirosa@Franciscos-MacBook-Pro src % cd ..
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Lab_3.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+	.DS_Store
+	.idea/
+	Lab03.iml
+	src/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % cd src   
+franciscorovirosa@Franciscos-MacBook-Pro src % ls
+HelloWorld.java
+franciscorovirosa@Franciscos-MacBook-Pro src % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    ../Lab_3.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../.DS_Store
+	../../.gitignore
+	../.DS_Store
+	../.idea/
+	../Lab03.iml
+	./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+franciscorovirosa@Franciscos-MacBook-Pro src % cd ..
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git add .
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   .idea/.gitignore
+	new file:   .idea/misc.xml
+	new file:   .idea/modules.xml
+	new file:   .idea/vcs.xml
+	new file:   Lab03.iml
+	deleted:    Lab_3.txt
+	new file:   src/HelloWorld.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git commit -m "create hello world class"
+[master 6f90620] create hello world class
+ 8 files changed, 39 insertions(+)
+ create mode 100644 Lab03/.DS_Store
+ create mode 100644 Lab03/.idea/.gitignore
+ create mode 100644 Lab03/.idea/misc.xml
+ create mode 100644 Lab03/.idea/modules.xml
+ create mode 100644 Lab03/.idea/vcs.xml
+ create mode 100644 Lab03/Lab03.iml
+ delete mode 100644 Lab03/Lab_3.txt
+ create mode 100644 Lab03/src/HelloWorld.java
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git push --set-upstream origin master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (16/16), 2.15 KiB | 2.15 MiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/FranRovi/CS_5004_Lab_3_Public_Repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % ls
+Lab03.iml	out		src
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   src/HelloWorld.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git commit -m "add print statement to HelloWorld file" 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   src/HelloWorld.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   src/HelloWorld.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git push                                               
+Everything up-to-date
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   src/HelloWorld.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git add src/HelloWorld.java 
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git commit -m "add print statement to HelloWorld file" 
+[master 9f3f7f0] add print statement to HelloWorld file
+ 1 file changed, 1 insertion(+)
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 458 bytes | 458.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/FranRovi/CS_5004_Lab_3_Public_Repo.git
+   6f90620..9f3f7f0  master -> master
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git log
+commit 9f3f7f053dbdd7424b096ebfef435f6308f4d403 (HEAD -> master, origin/master)
+Author: Francisco Rovirosa <rovirosafrancisco@gmail.com>
+Date:   Tue May 24 18:02:00 2022 -0700
+
+    add print statement to HelloWorld file
+
+commit 6f90620262a1d8f285eb14baf97322e7226368e3
+Author: Francisco Rovirosa <rovirosafrancisco@gmail.com>
+Date:   Tue May 24 17:54:03 2022 -0700
+
+    create hello world class
+
+commit 9f2b97f513fef06f579c29341f55967c0d160669
+Author: Francisco Rovirosa <rovirosafrancisco@gmail.com>
+Date:   Tue May 24 17:48:34 2022 -0700
+
+    Inital commit. Created new repo for Lab03
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git branch
+* master
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.DS_Store
+	../.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 729 bytes | 364.00 KiB/s, done.
+From https://github.com/FranRovi/CS_5004_Lab_3_Public_Repo
+   9f3f7f0..ae20a51  master     -> origin/master
+Updating 9f3f7f0..ae20a51
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % git log
+commit ae20a51ad23280722f2b6854aabfc3ad1ef84a23 (HEAD -> master, origin/master)
+Author: Francisco Rovirosa <rovirosafrancisco@gmail.com>
+Date:   Tue May 24 18:07:56 2022 -0700
+
+    Create README.md
+
+commit 9f3f7f053dbdd7424b096ebfef435f6308f4d403
+Author: Francisco Rovirosa <rovirosafrancisco@gmail.com>
+Date:   Tue May 24 18:02:00 2022 -0700
+
+    add print statement to HelloWorld file
+
+commit 6f90620262a1d8f285eb14baf97322e7226368e3
+Author: Francisco Rovirosa <rovirosafrancisco@gmail.com>
+Date:   Tue May 24 17:54:03 2022 -0700
+
+    create hello world class
+
+commit 9f2b97f513fef06f579c29341f55967c0d160669
+Author: Francisco Rovirosa <rovirosafrancisco@gmail.com>
+Date:   Tue May 24 17:48:34 2022 -0700
+
+    Inital commit. Created new repo for Lab03
+franciscorovirosa@Franciscos-MacBook-Pro Lab03 % 
